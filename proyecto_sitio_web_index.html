@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Práctica web</title>
+        <link rel="stylesheet" href="estilos.css" />
+        <style>
+            nav {
+                background-color: #91AEA7;
+                padding: 10px;
+                overflow: hidden;
+            }
+            nav a {
+                float: left;
+                color: #FAFAF9;
+                text-decoration: none;
+                padding: 14px 20px;
+                display: inline-block;
+            }
+            nav a:hover {
+                background-color: #364B44;
+            }
+            body {
+                background-color: #FAFAF9;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 20px;
+            }
+            h1 {
+                background-color: #91AEA7;
+                color: #FAFAF9;
+            }
+            h2 {
+                background-color: #FAFAF9;
+                color: #91AEA7;
+            }
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: #91AEA7;
+                border: 4px solid #8E6761;
+                transition: background-color 0.5s ease;
+                }
+            .box:hover {
+                background-color: #364B44;
+                animation: rotate 2s linear infinite;
+                }
+
+        </style>
+        </head>
+        <body>
+            <nav>
+                <a href="#Arquitectura cliente servidor">Cliente Servidor</a>
+                <a href="#Uso básico de etiquetas HTML">Etiquetas HTML</a>
+                <a href="pagina3.html">Página 3</a>
+            </nav>
+            <h1> <center>Conceptos básicos de programación web</center> </h1>
+            <hr align="center" width="100%"><br>
+            <h2 id="Arquitectura cliente servidor">Arquitectura cliente servidor</h2>
+            La arquitectura cliente-servidor es un modelo donde un cliente (como el navegador) envía solicitudes a un servidor, que procesa datos y responde con la información solicitada.
+            <p>
+            El desarrollo web, comenzó con páginas estáticas (solo HTML), luego pasó a sitios dinámicos con servidores que generan contenido (PHP, bases de datos) y hoy incluye aplicaciones modernas con APIs, JavaScript avanzado y arquitecturas distribuidas (como SPA y microservicios).      
+            <p> </p>
+            <a href="https://reactiveprogramming.io/_next/image?url=%2Ffigures%2Fcliente-servidor.png&w=1200&q=75" target="_blank">
+                <img src="https://reactiveprogramming.io/_next/image?url=%2Ffigures%2Fcliente-servidor.png&w=1200&q=75" 
+                alt="Diagrama de arquitectura cliente-servidor" width="500">
+            </a>
+            <hr align="center" width="100%"><br>
+            <h2>Uso básico de etiquetas HTML</h2>
+            Las etiquetas HTML son elementos que definen la estructura y el contenido de una página web.
+            Algunas etiquetas comunes incluyen:
+            <ul>
+                <li><b>&lt;h1&gt;</b> a <b>&lt;h6&gt;</b>: Encabezados de diferentes niveles.</li>
+                <li><b>&lt;p&gt;</b>: Define un párrafo.</li>
+                <li><b>&lt;br&gt;</b>: Crea un salto de línea.</li>
+                <li><b>&lt;img&gt;</b>: Inserta una imagen.</li>
+                <li><b>&lt;ul&gt;</b> y <b>&lt;ol&gt;</b>: Listas desordenadas y ordenadas, respectivamente.</li>
+            </ul>
+            <h2>Ejemplo de imágen con hipervinculo</h2>
+            <a href="https://techcrunch.com/2014/06/15/a-brief-history-of-the-dancing-baby-meme/" target="_blank">
+                <img src="Imagenes_html/babygif.webp" alt="Imagen de prueba" width="400" height="300" loading="lazy">
+            </a>
+            <h2>Ejemplo de hipervinculo</h2>
+            <a href="https://www.google.com" target="_blank">Visitar Google</a>
+            <h2>Animación con CSS</h2>
+            <div class="container">
+                <div class="box"></div>
+            </div>
+        </body>
+</html>
