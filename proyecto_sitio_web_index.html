@@ -45,6 +45,87 @@
                 background-color: #364B44;
                 animation: rotate 2s linear infinite;
                 }
+            .container {
+                perspective: 250px;
+                width: 300px;
+                height: 150px;
+                position: relative;
+                }
+            .tarjeta {
+                width: 50px;
+                height: 80px;
+                background-color: #442222;
+                font-size: 40px;
+                position: absolute;
+                top: 35px;
+                left: 125px;
+                border-radius: 8px;
+                text-align: center;
+                cursor: pointer;
+                animation: Carrusel 8s linear infinite;
+            }
+            @keyframes Carrusel {
+                from {
+                    transform: rotateY(360deg) translateZ(100px);
+                    z-index: 10;
+                    opacity: 0.9;
+                }
+                50% {
+                    z-index: -10;
+                }
+                to {
+                    transform: rotatex(0deg) translateZ(100px);
+                    z-index: 10;
+                    opacity: 0.9;
+                }
+            }
+            #Aragorn {
+                background-image: url("Imagenes_html/Aragorn.webp");
+                background-size: cover;
+            }
+            #Gandalf {
+                background-image: url("Imagenes_html/Gandalf.webp");
+                background-size: cover;
+                animation-delay: -1s;
+            }
+            #Gimli {
+                background-image: url("Imagenes_html/Gimli.webp");
+                background-size: cover;
+                animation-delay: -2s;
+            }
+            #Legolas {
+                background-image: url("Imagenes_html/Legolas.webp");
+                background-size: cover;
+                animation-delay: -3s;
+            }
+            #Frodo {
+                background-image: url("Imagenes_html/Frodo.webp");
+                background-size: cover;
+                animation-delay: -4s;
+            }
+            #Sam {
+                background-image: url("Imagenes_html/Sam.jpeg");
+                background-size: cover;
+                animation-delay: -5s;
+            }
+            #Merry {
+                background-image: url("Imagenes_html/Merry.webp");
+                background-size: cover;
+                animation-delay: -6s;
+            }
+            #Pippin {
+                background-image: url("Imagenes_html/Pippin.webp");
+                background-size: cover;
+                animation-delay: -7s;
+            }
+
+            .tarjeta h3 {
+                color: #white;
+                font-size: 5px;
+                font-family: franklin gothic medium, arial narrow, arial, sans-serif;
+                margin-top: 70px;
+                background-color: #ff0000;
+            } 
 
         </style>
         </head>
@@ -52,7 +133,7 @@
             <nav>
                 <a href="#Arquitectura cliente servidor">Cliente Servidor</a>
                 <a href="#Uso básico de etiquetas HTML">Etiquetas HTML</a>
-                <a href="pagina3.html">Página 3</a>
+                <a href="#Ejemplos de etiquetas HTML">Ejemplos </a>
             </nav>
             <h1> <center>Conceptos básicos de programación web</center> </h1>
             <hr align="center" width="100%"><br>
@@ -66,7 +147,7 @@
                 alt="Diagrama de arquitectura cliente-servidor" width="500">
             </a>
             <hr align="center" width="100%"><br>
-            <h2>Uso básico de etiquetas HTML</h2>
+            <h2 id="Uso básico de etiquetas HTML">Uso básico de etiquetas HTML</h2>
             Las etiquetas HTML son elementos que definen la estructura y el contenido de una página web.
             Algunas etiquetas comunes incluyen:
             <ul>
@@ -76,15 +157,26 @@
                 <li><b>&lt;img&gt;</b>: Inserta una imagen.</li>
                 <li><b>&lt;ul&gt;</b> y <b>&lt;ol&gt;</b>: Listas desordenadas y ordenadas, respectivamente.</li>
             </ul>
-            <h2>Ejemplo de imágen con hipervinculo</h2>
+            <h2 id="Ejemplos de etiquetas HTML">Ejemplo de imágen con hipervinculo</h2>
             <a href="https://techcrunch.com/2014/06/15/a-brief-history-of-the-dancing-baby-meme/" target="_blank">
                 <img src="Imagenes_html/babygif.webp" alt="Imagen de prueba" width="400" height="300" loading="lazy">
             </a>
             <h2>Ejemplo de hipervinculo</h2>
             <a href="https://www.google.com" target="_blank">Visitar Google</a>
-            <h2>Animación con CSS</h2>
+            <h2>Animación hover con CSS</h2>
             <div class="container">
                 <div class="box"></div>
+            </div>
+                <h2>Animación de tarjetas con CSS</h2>
+             <div class="container">
+                <div class="tarjeta" id="Aragorn"><h3>Aragorn</h3></div>
+                <div class="tarjeta" id="Gandalf"><h3>Gandalf</h3></div>
+                <div class="tarjeta" id="Gimli"><h3>Gimli</h3></div>
+                <div class="tarjeta" id="Legolas"><h3>Legolas</h3></div>
+                <div class="tarjeta" id="Frodo"><h3>Frodo</h3></div>
+                <div class="tarjeta" id="Sam"><h3>Sam</h3></div>
+                <div class="tarjeta" id="Merry"><h3>Merry</h3></div>
+                <div class="tarjeta" id="Pippin"><h3>Pippin</h3></div>
             </div>
         </body>
 </html>
